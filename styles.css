@@ -124,7 +124,7 @@ a:hover:before {
 
 /* Demonstrates effective use of CSS background properties to create an immersive and visually appealing section */
 .history-section {
-  background-image: url("images/history-background.png");
+  background-image: url("./images/history-background.png");
   height: 100vh;
   display: grid;
   justify-items: center;
@@ -286,12 +286,12 @@ a:hover:before {
 }
 /* Active Section - Demonstrates proficiency in using CSS classes and background images to create dynamic and engaging layouts */
 .active-section {
-  background-image: url("images/tab-1-bg.png");
+  background-image: url("./images/tab-1-bg.png");
 }
 
 /* Inactive Section - Showcases understanding of CSS classes and background images to provide visual feedback to users */
 .inactive-section {
-  background-image: url("images/tab-2-bg.png");
+  background-image: url("./images/tab-2-bg.png");
 }
 
 /* Schedule Image Container - Exhibits attention to detail in aligning and sizing images for optimal user experience */
@@ -336,12 +336,12 @@ a:hover:before {
 
 /* Mobile Accordion 1 - Exhibits expertise in using background images to create visually appealing sections */
 #mobile-accordion-1 {
-  background-image: url("images/tab-1-bg.png");
+  background-image: url("./images/tab-1-bg.png");
 }
 
 /* Mobile Accordion 2 - Displays understanding of using background images to differentiate sections and enhance user experience */
 #mobile-accordion-2 {
-  background-image: url("images/tab-2-bg.png");
+  background-image: url("./images/tab-2-bg.png");
 }
 
 /* Footer - Demonstrates proficiency in using CSS Grid for creating responsive and flexible layouts */
@@ -375,7 +375,7 @@ a:hover:before {
   /* Hero Section - Showcases ability to create visually appealing hero sections using background images */
   .hero-section {
     display: block;
-    background-image: url("images/hero-image.png");
+    background-image: url("./images/hero-image.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
