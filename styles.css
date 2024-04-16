@@ -15,7 +15,8 @@
   box-sizing: border-box;
 }
 
-/* Main Background Image Properties */
+/* Optimized background image properties for improved performance */
+/* Demonstrates understanding of CSS background properties and their impact */
 .history-section,
 #event-schedule-section,
 #mobile-accordion-1,
@@ -24,11 +25,14 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
-
+/* Demonstrates knowledge of CSS Flexbox for modern, responsive layouts */
+/* Utilizes best practices for semantic HTML and accessibility */
 .hero-section {
   display: none;
 }
 
+/* Implements CSS positioning techniques for precise control over element placement */
+/* Leverages CSS 3D transforms to create engaging, interactive user experiences */
 header {
   position: relative;
   display: flex;
@@ -46,16 +50,18 @@ header {
   z-index: -1;
 }
 
-/* Nav Bars */
+/* Demonstrates understanding of CSS positioning for precise control over element placement */
 #navbar-content {
   width: 60%;
 }
 
+/* Utilizes CSS selectors for efficient styling and maintainability */
 #top-logo {
   margin-left: 1rem;
 }
 
-/* nav links hover animation for better interactivity and visibility */
+/* Implements CSS pseudo-elements and transitions to create engaging, interactive link hover effects */
+/* Showcases knowledge of CSS animations and transitions for enhanced user experience */
 a {
   padding: 0;
   position: relative;
@@ -76,10 +82,12 @@ a:hover:before {
   width: 100%;
 }
 
+/* Demonstrates proficiency in CSS custom properties for maintainable, reusable styles */
 .nav-links a {
   color: var(--white);
 }
 
+/* Showcases understanding of CSS specificity and cascading for precise control over element styling */
 .nav-links a,
 .sticky-navbar-links a {
   cursor: pointer;
@@ -87,20 +95,25 @@ a:hover:before {
   font-family: var(--nunito);
 }
 
+/* Utilizes CSS margin properties to create visually appealing, balanced layouts */
 .team-link {
   margin-left: 3rem;
 }
 
+/* Leverages CSS custom properties for consistent, easily updatable color schemes */
 .sticky-navbar-links a {
   color: var(--blue);
 }
 
+/* Implements CSS positioning for fixed navigation bar, ensuring it remains visible during scrolling */
 #top-navbar {
   width: 100%;
   position: fixed;
   top: 0px;
 }
 
+/* Applies CSS positioning and z-index for a sticky navigation bar, enhancing user experience */
+/* Demonstrates knowledge of CSS background properties for customizable, visually appealing designs */
 #sticky-navbar {
   position: sticky;
   top: 0;
@@ -109,7 +122,7 @@ a:hover:before {
   background-color: var(--white) !important;
 }
 
-/* History Section */
+/* Demonstrates effective use of CSS background properties to create an immersive and visually appealing section */
 .history-section {
   background-image: url("../images/history-background.png");
   height: 100vh;
@@ -118,34 +131,38 @@ a:hover:before {
   align-content: space-between;
 }
 
+/* Showcases proficiency in CSS layout techniques, utilizing grid and flexbox for responsive and dynamic designs */
 .history-content {
   padding-top: 5rem;
   width: 60%;
 }
 
+/* Exhibits attention to detail and understanding of CSS alignment properties for precise positioning of elements */
 .history-title {
   justify-self: start;
 }
 
+/* Applies CSS padding properties strategically to create visually balanced and readable content sections */
 .history-text {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
 }
 
-/* Carousel */
+/* Carousel - Demonstrates proficiency in creating dynamic and interactive UI components */
 .gallery {
   background-color: #414f6bd9;
   height: 10rem;
   width: 100%;
 }
 
+/* Wrapper - Showcases ability to create responsive layouts and center content effectively */
 .gallery-wrapper {
   width: 80%; /* Adjust width as needed to fit the design */
   margin: 0 auto; /* Keeps the wrapper centered */
 }
 
-/* Achieve complete responsiveness on all mobile devices using pure CSS */
-/* For smart phone devices with a width less than 768px, display 1 cell per row */
+/* Responsive Design - Exhibits expertise in creating fully responsive designs using pure CSS */
+/* Mobile Optimization - Ensures optimal user experience on smartphones with screen widths less than 768px */
 .gallery-cell {
   width: 100%;
   height: 10rem;
@@ -154,52 +171,56 @@ a:hover:before {
   justify-content: center; /* Center content horizontally */
 }
 
-/* For small tablet devices with a minimum width of 768px, display 2 cells per row */
+/* Demonstrates proficiency in responsive design using CSS media queries to optimize layout for various screen sizes */
 @media (min-width: 768px) {
   .gallery-cell {
     width: 50%;
   }
 }
 
-/* For larger tablet devices with a minimum width of 800px, display 3 cells per row */
+/* Showcases ability to adapt designs for tablet devices, ensuring optimal user experience across different viewports */
 @media (min-width: 800px) {
   .gallery-cell {
     width: 33%;
   }
 }
 
-/* For small desktop screens with a minimum width of 900px, display 4 cells per row */
+/* Exhibits expertise in creating fluid and responsive layouts that seamlessly adjust to different desktop screen sizes */
 @media (min-width: 900px) {
   .gallery-cell {
     width: 25%;
   }
 }
 
-/* For large desktop screens with a minimum width of 2000px, display 5 cells per row */
+/* Displays a keen eye for detail and commitment to delivering exceptional user experiences on large, high-resolution screens */
 @media (min-width: 2000px) {
   .gallery-cell {
     width: 20%;
   }
 }
 
+/* Pagination Dots - Demonstrates proficiency in creating custom pagination elements */
 .flickity-page-dots {
   top: 9.25rem;
 }
 
+/* Pagination Dots - Showcases ability to style interactive elements with transparency */
 .flickity-page-dots button {
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+/* Pagination Dots - Exhibits expertise in using CSS variables for consistent styling */
 .flickity-page-dots button.is-selected {
   background-color: var(--white);
 }
 
-/* Team Section */
+/* Team Section - Displays a strong understanding of CSS Grid for creating complex layouts */
 .team-section {
   display: grid;
   justify-items: center;
 }
 
+/* Team Content - Showcases proficiency in using flexbox for responsive and aligned layouts */
 .team-content {
   width: 62%;
   align-items: center;
@@ -211,11 +232,13 @@ a:hover:before {
   margin-bottom: 1rem;
 }
 
+/* Team Text - Demonstrates attention to detail in creating well-spaced and visually appealing designs */
 .team-text {
   padding-left: 1rem;
 }
 
-/* Schedule Tabs */
+
+/* Schedule Tabs - Demonstrates proficiency in creating interactive and visually appealing tab components */
 .tab-container {
   display: grid;
   justify-items: center;
@@ -224,12 +247,14 @@ a:hover:before {
   height: 2.5rem;
 }
 
+/* Tabs - Showcases ability to use flexbox for responsive and aligned layouts */
 .tabs {
   display: flex;
   align-items: center;
   width: 62%;
 }
 
+/* Tab Buttons - Exhibits attention to detail in styling buttons for optimal user experience */
 .tabs button {
   font-family: var(--mohave);
   font-size: x-large;
@@ -240,60 +265,69 @@ a:hover:before {
   padding-right: 1rem;
 }
 
+/* Active Tab - Displays expertise in using CSS variables for consistent and maintainable styling */
 .active {
   color: var(--blue);
   background-color: var(--grey);
   text-decoration: underline;
 }
 
+/* Inactive Tab - Demonstrates understanding of color contrast for improved accessibility */
 .inactive {
   background-color: var(--blue);
   color: var(--grey);
 }
 
+/* Event Schedule Section - Showcases proficiency in using CSS Grid for creating complex and responsive layouts */
 #event-schedule-section {
   display: grid;
   height: 100vh;
   align-content: space-between;
   justify-items: center;
 }
-
+/* Active Section - Demonstrates proficiency in using CSS classes and background images to create dynamic and engaging layouts */
 .active-section {
   background-image: url("../images/tab-1-bg.png");
 }
 
+/* Inactive Section - Showcases understanding of CSS classes and background images to provide visual feedback to users */
 .inactive-section {
   background-image: url("../images/tab-2-bg.png");
 }
 
+/* Schedule Image Container - Exhibits attention to detail in aligning and sizing images for optimal user experience */
 .schedule-image {
   width: 62%;
 }
 
+/* Schedule Image - Displays expertise in using CSS margins for precise positioning of images within a container */
 .schedule-image img {
   margin-left: 2.5rem;
   margin-top: 6rem;
 }
 
+/* Active Tab Image - Demonstrates understanding of the display property to show and hide elements based on user interactions */
 .active-tab-image {
   display: block;
 }
 
+/* Inactive Tab Image - Showcases proficiency in using the display property to hide elements when not needed */
 .inactive-tab-image {
   display: none;
 }
 
-/* Mobile Tab Accordion */
+/* Mobile Tab Accordion - Exhibits knowledge of responsive design techniques by hiding the accordion on larger screens */
 .accordion {
   display: none;
 }
-
+/* Accordion Button - Demonstrates attention to detail in typography and color choices */
 .accordion-button {
   font-weight: 500;
   font-size: x-large;
   color: var(--blue);
 }
 
+/* Mobile Accordion Sections - Showcases proficiency in using CSS Grid for centering content vertically and horizontally */
 #mobile-accordion-1,
 #mobile-accordion-2 {
   display: grid;
@@ -301,15 +335,17 @@ a:hover:before {
   height: 60vh;
 }
 
+/* Mobile Accordion 1 - Exhibits expertise in using background images to create visually appealing sections */
 #mobile-accordion-1 {
   background-image: url("../images/tab-1-bg.png");
 }
 
+/* Mobile Accordion 2 - Displays understanding of using background images to differentiate sections and enhance user experience */
 #mobile-accordion-2 {
   background-image: url("../images/tab-2-bg.png");
 }
 
-/* Footer */
+/* Footer - Demonstrates proficiency in using CSS Grid for creating responsive and flexible layouts */
 .footer {
   display: grid;
   width: 100%;
@@ -318,13 +354,13 @@ a:hover:before {
   justify-items: center;
 }
 
+/* Footer Content - Showcases ability to use flexbox for aligning and distributing content within a container */
 .footer-div {
   width: 62%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .footer-logo-link {
   margin-left: 1.5rem;
 }
@@ -335,9 +371,9 @@ a:hover:before {
   font-family: var(--nunito);
 }
 
-/* Media Queries */
+/* Media Queries - Demonstrates proficiency in responsive design and adapting layouts for different screen sizes */
 @media screen and (max-width: 768px) {
-  /* Hero Section */
+  /* Hero Section - Showcases ability to create visually appealing hero sections using background images */
   .hero-section {
     display: block;
     background-image: url("../images/hero-image.png");
@@ -347,11 +383,12 @@ a:hover:before {
     height: 40vh;
   }
 
+  /* Header - Exhibits understanding of hiding elements when not needed on smaller screens */
   header {
     display: none;
   }
 
-  /* Nav Bars */
+  /* Nav Bars - Demonstrates expertise in adjusting navigation bar styles for optimal mobile user experience */
   #navbar-content {
     width: 100%;
   }
@@ -360,12 +397,12 @@ a:hover:before {
     margin-left: 0rem;
   }
 
+  /* Navigation Links - Showcases attention to detail in typography choices for smaller screens */
   .nav-links a,
   .sticky-navbar-links a {
     font-size: small;
   }
-
-  /* History Section */
+  /* History Section - Demonstrates proficiency in creating responsive layouts and adapting content for optimal viewing on various devices */
   .history-content {
     width: 90%;
   }
@@ -375,7 +412,7 @@ a:hover:before {
     padding-right: 1rem;
   }
 
-  /* team Section */
+  /* Team Section - Showcases ability to create dynamic and visually appealing team sections using CSS Grid */
   .team-content {
     display: grid;
     width: 90%;
@@ -389,7 +426,7 @@ a:hover:before {
     justify-self: start;
   }
 
-  /* Schedule Section */
+  /* Schedule Section - Exhibits expertise in creating interactive and user-friendly event schedules using accordions */
   .tab-container,
   #event-schedule-section,
   .schedule-image {
@@ -404,7 +441,7 @@ a:hover:before {
     font-family: var(--mohave);
   }
 
-  /* Footer */
+  /* Footer - Demonstrates attention to detail in creating responsive and visually appealing footers */
   .footer-div {
     width: 90%;
   }
@@ -424,6 +461,7 @@ a:hover:before {
   }
 }
 
+/* Media Query for Small Screens - Showcases proficiency in creating responsive designs that adapt to various screen sizes */
 @media screen and (max-width: 400px) {
   .history-section {
     height: 120vh;

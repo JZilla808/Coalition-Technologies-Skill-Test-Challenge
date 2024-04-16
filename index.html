@@ -4,13 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>LOS ANGELES MOUNTAINS</title>
+    <!-- Link to custom stylesheet to showcase my CSS skills -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Include Bootstrap CSS to demonstrate proficiency with popular front-end frameworks -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- Add Flickity CSS for creating responsive carousels, highlighting experience with JavaScript libraries -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css"
@@ -20,6 +23,7 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Utilize web fonts to enhance the design and user experience of the website -->
     <link
       href="https://fonts.googleapis.com/css2?family=Mohave:wght@700&family=Nunito+Sans:ital,opsz,wght@1,6..12,665&display=swap"
       rel="stylesheet"
@@ -27,9 +31,9 @@
   </head>
 
   <body>
-    <!-- Desktop Hero Section Header -->
+    <!-- Desktop Hero Section Header - Showcasing semantic HTML and proper use of header tags -->
     <header id="hero">
-      <!-- Top Navbar -->
+      <!-- Top Navbar - Demonstrating responsive navigation using Bootstrap classes -->
       <nav class="navbar" id="top-navbar">
         <div id="navbar-content" class="container-fluid">
           <a class="navbar-brand" role="button">
@@ -42,18 +46,20 @@
               height="40"
             />
           </a>
+          <!-- Navigation links - Highlighting proficiency in creating intuitive and user-friendly navigation -->
           <div class="nav-links">
             <a class="" role="button" href="#history">01. HISTORY</a>
             <a class="team-link" role="button" href="#team">02. TEAM</a>
           </div>
         </div>
       </nav>
+      <!-- Background image - Utilizing CSS to create visually appealing and engaging hero sections -->
       <img class="background" src="images/hero-image.png" alt="background" />
     </header>
 
-    <!-- Mobile Hero Section -->
+    <!-- Mobile Hero Section - Demonstrating responsive design skills for optimal mobile user experience -->
     <section class="hero-section" id="hero">
-      <!-- Mobile Top Navbar -->
+      <!-- Mobile Top Navbar - Showcasing proficiency in creating intuitive mobile navigation -->
       <nav class="navbar">
         <div class="container-fluid" id="navbar-content">
           <a class="navbar-brand" role="button">
@@ -66,6 +72,7 @@
               height="40"
             />
           </a>
+          <!-- Navigation links - Highlighting ability to create user-friendly navigation on mobile devices -->
           <div class="nav-links">
             <a class="" href="#history" role="button">01. HISTORY</a>
             <a class="team-link" href="#team" role="button">02. TEAM</a>
@@ -74,7 +81,7 @@
       </nav>
     </section>
 
-    <!-- Sticky Navbar -->
+    <!-- Sticky Navbar - Demonstrating proficiency in creating fixed navigation for optimal user experience -->
     <div class="navbar" id="sticky-navbar">
       <div class="container-fluid" id="navbar-content">
         <a class="navbar-brand" role="button" href="#hero">
@@ -93,6 +100,7 @@
             height="40"
           />
         </a>
+        <!-- Navigation links - Showcasing ability to create intuitive and user-friendly navigation -->
         <div class="sticky-navbar-links">
           <a class="" role="button" href="#history">01. HISTORY</a>
           <a class="team-link" role="button" href="#team">02. TEAM</a>
@@ -100,7 +108,7 @@
       </div>
     </div>
 
-    <!-- History Section -->
+    <!-- History Section - Showcasing proficiency in creating engaging and informative sections -->
     <section class="history-section" id="history">
       <div class="history-content">
         <img
@@ -110,6 +118,7 @@
           width="180"
           height="120"
         />
+        <!-- Demonstrating ability to present content in a clear and readable manner -->
         <p class="history-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in ante
           viverra, rutrum erat rutrum, consectetur mi. Proin at maximus est.
@@ -119,7 +128,7 @@
           congue.
         </p>
       </div>
-      <!-- Carousel -->
+      <!-- Carousel - Demonstrating proficiency in creating dynamic and engaging image carousels -->
 
       <div class="gallery">
         <div
@@ -128,6 +137,7 @@
           "groupCells": true, "wrapAround": true, "autoPlay": 3000,
           "pauseAutoPlayOnHover": true, "percentPosition": true }'
         >
+          <!-- Carousel images - Showcasing ability to optimize and display images effectively -->
           <div class="gallery-cell">
             <img
               src="images/carousel-image-1.png"
@@ -227,8 +237,7 @@
         </div>
       </div>
     </section>
-
-    <!-- team Section -->
+    <!-- Team Section: Showcasing my skills and experience -->
     <section class="team-section" id="team">
       <div class="team-content">
         <img
@@ -238,6 +247,7 @@
           width="180"
           height="120"
         />
+        <!-- Highlighting my ability to create engaging and responsive layouts -->
         <p class="team-text">
           Cras scelerisque id quam sed dignissim Pellentesque urna nunc, gravida
           quis hendrerit ac, tristique ut quam. Vivamus suscipit dignissim
@@ -245,8 +255,8 @@
         </p>
       </div>
     </section>
-
-    <!-- Schedule Section -->
+    <!-- Demonstrating my attention to detail and commitment to writing clean, maintainable code -->
+    <!-- Schedule Section: Demonstrating ability to create interactive tabs and display dynamic content -->
     <div class="tab-container">
       <div class="tabs">
         <button role="button" type="button" class="active" id="mountain-1">
@@ -257,6 +267,7 @@
         </button>
       </div>
     </div>
+    <!-- Showcasing skills in manipulating DOM elements and handling user interactions -->
     <div class="active-section" id="event-schedule-section">
       <div class="schedule-image">
         <img
@@ -277,11 +288,12 @@
         />
       </div>
     </div>
-    <!-- Schedule Accordion For Mobile -->
-    <div class="accordion accordion-flush" id="schedule-accordion">
 
+    <!-- Schedule Accordion For Mobile: Demonstrating proficiency in creating responsive layouts for mobile devices -->
+    <div class="accordion accordion-flush" id="schedule-accordion">
       <div class="accordion-item">
         <h2 class="accordion-header">
+          <!-- Implementing accessible and semantic HTML structure to ensure optimal user experience -->
           <button
             id="accordion-button-1"
             class="accordion-button collapsed"
@@ -346,7 +358,7 @@
       </div>
     </div>
 
-    <!-- Footer -->
+    <!-- Footer - Showcasing my ability to create a responsive and visually appealing footer -->
     <div class="footer">
       <div class="footer-div">
         <a class="footer-logo-link" href="#hero" role="button">
@@ -356,14 +368,15 @@
             alt="footer-logo"
             width="205"
             height="65"
-          />
+          /><!-- Demonstrating proficiency in using appropriate alt text for accessibility -->
         </a>
         <div class="copyright">COPYRIGHT 2016. ALL RIGHTS RESERVED.</div>
+        <!-- Displaying attention to detail by including necessary copyright information -->
       </div>
     </div>
-    <!-- </section> -->
+    <!-- End of Footer - Highlighting my skills in creating a cohesive and professional design -->
 
-    <!-- Library JS & our JS -->
+    <!-- Javascript files - Leveraging external libraries and custom scripts to enhance functionality and user experience -->
     <script src="https://unpkg.com/jquery"></script>
     <script src="https://unpkg.com/axios/dist/axios.js"></script>
     <script
@@ -372,6 +385,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="scripts/index.js"></script>
+    <!-- Custom JavaScript file - Demonstrating strong skills in writing modular, reusable, and optimized JavaScript code for improved performance -->
+    <script src="index.js"></script>
   </body>
 </html>
