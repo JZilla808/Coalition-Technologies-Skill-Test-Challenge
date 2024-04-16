@@ -1,4 +1,9 @@
-# Coalition Technologies Front-End Skills Test
+# Coalition Technologies Front-End Skill Test V3
+
+<img src='./images/my-complete-project.jpg' alt='My Complete Project'>
+
+
+## [LIVE DEMO](https://jzilla808.github.io/Coalition-Technologies-Skill-Test-Challenge/)
 
 ## Project Overview
 
@@ -8,7 +13,7 @@ I am excited to present my skills test submission for the front-end position at 
 
 - Transformed the provided PSD into a dynamic, single-page website
 - Responsive design that adjusts flawlessly across different devices
-- Responsive carousel that adapts seamlessly to various screen sizes
+- Responsive carousel that adapts seamlessly to various screen sizes using pure CSS
 - Mobile-friendly design where tabs convert into an accordion layout, enhancing usability on smaller screens
 
 ## Technologies Used
@@ -17,7 +22,9 @@ I am excited to present my skills test submission for the front-end position at 
 - CSS3
 - JavaScript
 - jQuery
+- Flickity
 - Bootstrap
+- Adobe Photoshop
 
 ## Demonstration of Skills
 
@@ -27,6 +34,7 @@ This project demonstrates my commitment to delivering high-quality, user-centric
 - Implement interactive features such as carousels and accordions
 - Optimize websites for seamless performance across various devices and screen sizes
 - Write clean, maintainable, and efficient code
+- Implemented a visually appealing and intuitive hover animation for navigation links using pure CSS, demonstrating strong command of front-end techniques and attention to detail
 
 ## Getting Started
 

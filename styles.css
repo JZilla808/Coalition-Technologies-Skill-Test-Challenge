@@ -1,0 +1,431 @@
+:root {
+  --blue: #414f6b;
+  --white: #ffffff;
+  --grey: rgb(171, 171, 171);
+
+  --mohave: "Mohave", sans-serif;
+  --nunito: "Nunito Sans", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Main Background Image Properties */
+.history-section,
+#event-schedule-section,
+#mobile-accordion-1,
+#mobile-accordion-2 {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero-section {
+  display: none;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transform-style: preserve-3d;
+}
+
+.background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Nav Bars */
+#navbar-content {
+  width: 60%;
+}
+
+#top-logo {
+  margin-left: 1rem;
+}
+
+/* nav links hover animation for better interactivity and visibility */
+a {
+  padding: 0;
+  position: relative;
+}
+a:before {
+  content: "";
+  width: 0;
+  right: 0;
+  bottom: 0;
+  height: 0.25rem;
+  background-color: #888;
+  position: absolute;
+  transition: width 0.2s linear;
+}
+a:hover:before {
+  right: initial;
+  left: 0;
+  width: 100%;
+}
+
+.nav-links a {
+  color: var(--white);
+}
+
+.nav-links a,
+.sticky-navbar-links a {
+  cursor: pointer;
+  font-weight: 600;
+  font-family: var(--nunito);
+}
+
+.team-link {
+  margin-left: 3rem;
+}
+
+.sticky-navbar-links a {
+  color: var(--blue);
+}
+
+#top-navbar {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+}
+
+#sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: var(--white) !important;
+}
+
+/* History Section */
+.history-section {
+  background-image: url("../images/history-background.png");
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-content: space-between;
+}
+
+.history-content {
+  padding-top: 5rem;
+  width: 60%;
+}
+
+.history-title {
+  justify-self: start;
+}
+
+.history-text {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+}
+
+/* Carousel */
+.gallery {
+  background-color: #414f6bd9;
+  height: 10rem;
+  width: 100%;
+}
+
+.gallery-wrapper {
+  width: 80%; /* Adjust width as needed to fit the design */
+  margin: 0 auto; /* Keeps the wrapper centered */
+}
+
+/* Achieve complete responsiveness on all mobile devices using pure CSS */
+/* For smart phone devices with a width less than 768px, display 1 cell per row */
+.gallery-cell {
+  width: 100%;
+  height: 10rem;
+  display: grid;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+/* For small tablet devices with a minimum width of 768px, display 2 cells per row */
+@media (min-width: 768px) {
+  .gallery-cell {
+    width: 50%;
+  }
+}
+
+/* For larger tablet devices with a minimum width of 800px, display 3 cells per row */
+@media (min-width: 800px) {
+  .gallery-cell {
+    width: 33%;
+  }
+}
+
+/* For small desktop screens with a minimum width of 900px, display 4 cells per row */
+@media (min-width: 900px) {
+  .gallery-cell {
+    width: 25%;
+  }
+}
+
+/* For large desktop screens with a minimum width of 2000px, display 5 cells per row */
+@media (min-width: 2000px) {
+  .gallery-cell {
+    width: 20%;
+  }
+}
+
+.flickity-page-dots {
+  top: 9.25rem;
+}
+
+.flickity-page-dots button {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.flickity-page-dots button.is-selected {
+  background-color: var(--white);
+}
+
+/* Team Section */
+.team-section {
+  display: grid;
+  justify-items: center;
+}
+
+.team-content {
+  width: 62%;
+  align-items: center;
+  display: flex;
+
+  padding-left: 3rem;
+  padding-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.team-text {
+  padding-left: 1rem;
+}
+
+/* Schedule Tabs */
+.tab-container {
+  display: grid;
+  justify-items: center;
+  background-color: var(--blue);
+  width: 100%;
+  height: 2.5rem;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  width: 62%;
+}
+
+.tabs button {
+  font-family: var(--mohave);
+  font-size: x-large;
+  height: 100%;
+  border: none;
+  border-radius: 0%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.active {
+  color: var(--blue);
+  background-color: var(--grey);
+  text-decoration: underline;
+}
+
+.inactive {
+  background-color: var(--blue);
+  color: var(--grey);
+}
+
+#event-schedule-section {
+  display: grid;
+  height: 100vh;
+  align-content: space-between;
+  justify-items: center;
+}
+
+.active-section {
+  background-image: url("../images/tab-1-bg.png");
+}
+
+.inactive-section {
+  background-image: url("../images/tab-2-bg.png");
+}
+
+.schedule-image {
+  width: 62%;
+}
+
+.schedule-image img {
+  margin-left: 2.5rem;
+  margin-top: 6rem;
+}
+
+.active-tab-image {
+  display: block;
+}
+
+.inactive-tab-image {
+  display: none;
+}
+
+/* Mobile Tab Accordion */
+.accordion {
+  display: none;
+}
+
+.accordion-button {
+  font-weight: 500;
+  font-size: x-large;
+  color: var(--blue);
+}
+
+#mobile-accordion-1,
+#mobile-accordion-2 {
+  display: grid;
+  place-content: center;
+  height: 60vh;
+}
+
+#mobile-accordion-1 {
+  background-image: url("../images/tab-1-bg.png");
+}
+
+#mobile-accordion-2 {
+  background-image: url("../images/tab-2-bg.png");
+}
+
+/* Footer */
+.footer {
+  display: grid;
+  width: 100%;
+  height: 5rem;
+  background-color: #465573;
+  justify-items: center;
+}
+
+.footer-div {
+  width: 62%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo-link {
+  margin-left: 1.5rem;
+}
+
+.copyright {
+  color: #687da6;
+  font-weight: 900;
+  font-family: var(--nunito);
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  /* Hero Section */
+  .hero-section {
+    display: block;
+    background-image: url("../images/hero-image.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 40vh;
+  }
+
+  header {
+    display: none;
+  }
+
+  /* Nav Bars */
+  #navbar-content {
+    width: 100%;
+  }
+
+  #top-logo {
+    margin-left: 0rem;
+  }
+
+  .nav-links a,
+  .sticky-navbar-links a {
+    font-size: small;
+  }
+
+  /* History Section */
+  .history-content {
+    width: 90%;
+  }
+
+  .history-text {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  /* team Section */
+  .team-content {
+    display: grid;
+    width: 90%;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .team-title {
+    justify-self: start;
+  }
+
+  /* Schedule Section */
+  .tab-container,
+  #event-schedule-section,
+  .schedule-image {
+    display: none;
+  }
+
+  .accordion {
+    display: block;
+  }
+
+  .accordion-button {
+    font-family: var(--mohave);
+  }
+
+  /* Footer */
+  .footer-div {
+    width: 90%;
+  }
+
+  .footer-logo-link {
+    margin-left: 0rem;
+  }
+
+  .footer-logo-link img {
+    width: 120px;
+    height: 40px;
+  }
+
+  .copyright {
+    font-size: x-small;
+    font-weight: 900;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .history-section {
+    height: 120vh;
+  }
+}

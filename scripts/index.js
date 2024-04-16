@@ -1,22 +1,39 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const carouselItems = document.querySelectorAll(".carousel-item");
-  let currentItem = 0;
+"use strict";
+$(document).ready(function () {
+  $("#mountain-1, #mountain-2").click(function () {
+    $("#mountain-1, #mountain-2").toggleClass("active inactive");
+    $("#tab-1-image, #tab-2-image").toggleClass(
+      "active-tab-image inactive-tab-image"
+    );
+    $("#event-schedule-section").toggleClass("active-section inactive-section");
+  });
 
-  function nextCarouselItem() {
-    carouselItems[currentItem].classList.remove("active");
-    currentItem = (currentItem + 1) % carouselItems.length;
-    carouselItems[currentItem].classList.add("active");
-  }
+  $("#accordion-button-1").click(function () {
+    $("#accordion-button-1").toggleClass('"" collapsed');
+    $("#mountain1-details").toggleClass('"" show');
+  });
+  $("#accordion-button-2").click(function () {
+    $("#accordion-button-2").toggleClass('"" collapsed');
+    $("#mountain2-details").toggleClass('"" show');
+  });
+});
 
-  setInterval(nextCarouselItem, 3000);
-
-  // Accordion for mobile
-  if (window.innerWidth < 768) {
-    const sections = document.querySelectorAll("section");
-    sections.forEach((section) => {
-      section.addEventListener("click", function () {
-        this.classList.toggle("accordion");
-      });
-    });
+$(".footer-logo-link, .navbar-brand").click(function () {
+  if ($(window).width() >= 900) {
+    // Desktop view
+    $("html, body").animate(
+      {
+        scrollTop: $("#desktop-hero").offset().top,
+      },
+      800
+    );
+  } else {
+    // Mobile view
+    $("html, body").animate(
+      {
+        scrollTop: $("#hero").offset().top,
+      },
+      300
+    );
   }
 });
