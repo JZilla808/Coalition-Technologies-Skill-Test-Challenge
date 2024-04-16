@@ -1,6 +1,6 @@
 # Coalition Technologies Front-End Skill Test V3
 
-<img src='./images/my-complete-project.jpg' alt='My Complete Project'>
+<img src='./images/my-complete-project.jpeg' alt='My Complete Project'>
 
 
 ## [LIVE DEMO](https://jzilla808.github.io/Coalition-Technologies-Skill-Test-Challenge/)
